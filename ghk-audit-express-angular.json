@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-16T14:15:51.857Z",
+  "createdBy": "gherkin-ai-cli",
+  "artifacts": [
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "23b5ff2aaca12791b9e310f357b99ab5529a795c54e0d6e0010cde26540ce497"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "d83f9530d9fb59fae9bcd1e47f241b27cff494d4b45d1b054b8438daef01c6a9"
+    },
+    {
+      "filePath": "contracts.ts",
+      "type": "contract",
+      "checksum": "592c48dc88d06338e4d50ea9ba46629d794b4726203c2a9f8866cc4befa16de3"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "cc3a039e5974337dcb915b28eb118c322f425dcaaa68cd6c5e3c3edba479bc80"
+    },
+    {
+      "filePath": "package.json",
+      "type": "config",
+      "checksum": "8a63ba3d1704521aaaf37e14185588354e0792078af306dbcf769d653b78f575"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "402cbd892271b7c975b587b993366a0bf36bffba58e647c36751f03142052eac"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "78e4a0714f1f60f9e5209bfe9bcfbaba9453a932438adda0fa9f92c9f0b30da6"
+    },
+    {
+      "filePath": "autenticaci-n-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular-17.spec.ts",
+      "type": "test",
+      "checksum": "a01c067cb1b2c86edb419e57a1f87532f9f35e8e543a918d114b2a597a6845a6"
+    },
+    {
+      "filePath": "frontend/store/autenticación-con-jwt-middleware-en-express.js-y-functional-interceptor-en-angular-17.store.ts",
+      "type": "test",
+      "checksum": "44a4542992b5fc02136cc26b541e97bb6b5e627bd5086c29155e261aa268db9f"
+    },
+    {
+      "filePath": "frontend/services/signalr-notification.service.ts",
+      "type": "test",
+      "checksum": "1178789d31e0bb69b616bd1f45a61ff3eae349a874320d42e60ba6dd3b30a127"
+    },
+    {
+      "filePath": "prisma/schema.prisma",
+      "type": "other",
+      "checksum": "e630c587eace5c39b7ffe5916172e028c09427a594ab7a703887b0f3539c7110"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "4d70b96fa66972ca85b1cb9cdfa74a8b80ace5e66d1ae4a1a1d75c1d7fbc3deb"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "066e71bbcae111dc2061e1e97298547a210d00ac4e4bf3588f6a041b752c095a"
+    },
+    {
+      "filePath": "infrastructure/lib/express-angular-auth-stack.ts",
+      "type": "config",
+      "checksum": "a71d25728876161f24c5d3f79cf78658381323c310f75756477d9ccf88c368ee"
+    },
+    {
+      "filePath": "infrastructure/cdk.json",
+      "type": "config",
+      "checksum": "daa0e92fa50204a873c650dbe75c235f7e882d6c0df1a51296e9048adc9c95db"
+    },
+    {
+      "filePath": "infrastructure/package.json",
+      "type": "config",
+      "checksum": "611822b9da16a4b3bbcfe7652d74e59047414f0bc674ef7fa21bdaa835d1c788"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "7dbb68490d8b7539a512b809f667bcb664e0126a18a8184bd734adf97a198491"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "bb9e3cc5eef296a19f58652869a63e831c5cf243e15d80edee6aa9c48e575197"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "b2403033b46d0366dc373ef6aa4f21692eba33702254bd6a21b26913c55d6ef7"
+    }
+  ]
+}

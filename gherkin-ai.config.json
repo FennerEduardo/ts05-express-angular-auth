@@ -1,0 +1,28 @@
+{
+  "projectName": "express-angular-auth",
+  "architecture": "monolith",
+  "stack": {
+    "language": "typescript",
+    "framework": "express",
+    "orm": "prisma",
+    "database": "mysql",
+    "validation": "zod",
+    "auth": "jwt-bcrypt",
+    "messaging": "none",
+    "testing": "vitest"
+  },
+  "frontendStack": {
+    "framework": "angular",
+    "language": "javascript",
+    "bundler": "vite",
+    "unitTesting": "vitest",
+    "e2eTesting": "cypress"
+  },
+  "rules": {
+    "bcryptCostFactor": 12,
+    "jwtTtlSeconds": 3600,
+    "strictLayerBoundaries": true,
+    "coverageTarget": 85
+  },
+  "outputDir": "./generated-specs"
+}
