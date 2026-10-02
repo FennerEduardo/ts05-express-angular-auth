@@ -1,6 +1,9 @@
 🤖 ROLE: QA AGENT (Jest/Supertest)
 Objective: Implement automated tests using Jest and Supertest.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 
 📌 Fixture Reference:
 - Use test fixtures from ./fixtures.ts

@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model AutenticacinconJWTMiddlewareenExpressjsyFunctionalInterceptorenAngular17 {
+model AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17 {
   id String @id @default(uuid())
 
   createdAt DateTime @default(now())

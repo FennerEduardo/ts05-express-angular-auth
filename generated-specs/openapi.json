@@ -9,7 +9,7 @@
     "/api/v1/autenticaci-n-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular-17": {
       "post": {
         "summary": "POST /api/v1/autenticaci-n-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular-17",
-        "operationId": "loginAutenticacinconJWTMiddlewareenExpressjsyFunctionalInterceptorenAngular",
+        "operationId": "loginAutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17",
         "security": [
           {
             "bearerAuth": []
