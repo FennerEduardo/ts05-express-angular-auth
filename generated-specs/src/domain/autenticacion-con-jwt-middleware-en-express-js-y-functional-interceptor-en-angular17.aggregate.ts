@@ -34,6 +34,14 @@ export class AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAng
     if (!id || !id.trim()) throw new DomainValidationError('AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17 id is required');
   }
 
+  /** Rebuilds an aggregate from persisted state; no events are recorded. */
+  static restore(id: string, state: AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17State, version: number): AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate {
+    const aggregate = new AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate(id);
+    aggregate._state = state;
+    aggregate._version = version;
+    return aggregate;
+  }
+
   get state(): AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17State {
     return this._state;
   }
