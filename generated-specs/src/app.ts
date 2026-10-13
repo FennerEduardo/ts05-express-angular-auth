@@ -1,37 +1,48 @@
 import express, { NextFunction, Request, Response } from 'express';
-import { AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate, AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Command, AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17DomainEvent, DomainValidationError } from './domain/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.aggregate';
+import { DomainValidationError } from './domain/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.aggregate';
+import type { CommandRequest, CommandResult } from './runtime/command-service';
+import { tenantFromAuthorization } from './auth/jwt';
 
-type Handler = (aggregate: AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate, command: AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Command) => AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17DomainEvent;
+/** What the HTTP layer needs from the runtime kernel (CommandService implements it). */
+export interface CommandPort {
+  handle(request: CommandRequest): Promise<CommandResult>;
+}
 
-const COMMANDS: Record<string, Handler> = {
-  process_autenticacion_con_jwt_middleware_en_express_js_y_functional_interceptor_en_angular17: (a, c) => a.processAutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17(c),
-};
+const STATUS: Record<CommandResult['status'], number> = { created: 202, replayed: 200, 'in-progress': 409 };
 
-/** Builds the Express app. The in-memory store is a placeholder for a repository + outbox. */
-export function createApp(): express.Express {
+// ghk:implements AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17
+export function createApp(commands: CommandPort): express.Express {
   const app = express();
-  const store = new Map<string, AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate>();
   app.use(express.json());
 
   app.get('/health', (_req, res) => {
     res.json({ status: 'ok' });
   });
 
-  app.post('/api/v1/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17/:id/:command', (req: Request<{ id: string; command: string }>, res: Response, next: NextFunction) => {
-    const handler = COMMANDS[req.params.command];
-    if (!handler) {
-      res.status(404).json({ detail: `Unknown command ${req.params.command}` });
+  // One route per feature of the service; each names its aggregate type.
+  const routes: [string, string][] = [['/api/v1/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17', 'AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17']];
+  for (const [route, aggregateType] of routes) app.post(`${route}/:id/:command`, async (req: Request<{ id: string; command: string }>, res: Response, next: NextFunction) => {
+    // The tenant comes only from the validated token, never from a header such as X-Tenant-Id.
+    const tenantId = tenantFromAuthorization(req.headers.authorization);
+    if (!tenantId) {
+      res.status(401).json({ detail: 'A valid bearer token with a tenant is required' });
       return;
     }
     try {
-      const id = req.params.id;
-      const aggregate = store.get(id) ?? new AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Aggregate(id);
-      store.set(id, aggregate);
-      const event = handler(aggregate, { id, payload: req.body ?? {} });
-      res.status(201).json({ type: event.type, aggregateId: event.aggregateId, version: event.version });
+      const result = await commands.handle({
+        tenantId,
+        aggregateType,
+        aggregateId: req.params.id,
+        command: req.params.command,
+        payload: req.body ?? {},
+        idempotencyKey: req.header('idempotency-key') ?? undefined,
+        traceparent: req.header('traceparent') ?? undefined
+      });
+      res.status(STATUS[result.status]).json(result);
     } catch (err) {
-      if (err instanceof DomainValidationError) {
-        res.status(422).json({ detail: err.message });
+      // By name: every feature's domain module declares its own DomainValidationError class.
+      if (err instanceof DomainValidationError || (err as Error)?.name === 'DomainValidationError') {
+        res.status(422).json({ detail: (err as Error).message });
         return;
       }
       next(err);

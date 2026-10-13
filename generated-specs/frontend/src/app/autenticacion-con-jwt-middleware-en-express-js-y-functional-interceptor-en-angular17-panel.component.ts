@@ -3,7 +3,7 @@ import { COMMANDS } from './api/autenticacion-con-jwt-middleware-en-express-js-y
 import { AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Store } from './state/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.store';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-panel',
   standalone: true,
   template: `
     <section aria-label="Autenticación con JWT Middleware en Express.js y Functional Interceptor en Angular 17">

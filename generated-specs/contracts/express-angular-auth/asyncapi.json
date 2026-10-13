@@ -1,0 +1,10 @@
+{
+  "asyncapi": "2.6.0",
+  "info": {
+    "title": "Autenticación con JWT Middleware en Express.js y Functional Interceptor en Angular 17 AsyncAPI Specification",
+    "version": "1.0.0",
+    "description": "Auto-generated AsyncAPI events for Autenticación con JWT Middleware en Express.js y Functional Interceptor en Angular 17 from Gherkin feature spec."
+  },
+  "defaultContentType": "application/json",
+  "channels": {}
+}

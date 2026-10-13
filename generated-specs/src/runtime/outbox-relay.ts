@@ -15,7 +15,7 @@ export interface Topology {
 export function topology(prefix = 'autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17'): Topology {
   return { exchange: `${prefix}.events`, queue: `${prefix}.consumer`, dlx: `${prefix}.dlx`, dlq: `${prefix}.dlq` };
 }
-export const DEFAULT_TOPOLOGY: Topology = {"exchange":"autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.events","queue":"autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.consumer","dlx":"autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.dlx","dlq":"autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.dlq"};
+export const DEFAULT_TOPOLOGY: Topology = {"exchange":"express-angular-auth.events","queue":"express-angular-auth.consumer","dlx":"express-angular-auth.dlx","dlq":"express-angular-auth.dlq"};
 
 /** Topic exchange -> consumer queue, which dead-letters rejected messages to a fanout DLX -> DLQ. */
 export async function declareTopology(channel: Channel, t: Topology = DEFAULT_TOPOLOGY): Promise<void> {

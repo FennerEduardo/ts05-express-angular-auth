@@ -2,7 +2,7 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { describe, expect, it, vi, type Mock } from 'vitest';
 import { AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Store } from './autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.store';
-import { AUTENTICACION_CON_JWT_MIDDLEWARE_EN_EXPRESS_JS_Y_FUNCTIONAL_INTERCEPTOR_EN_ANGULAR17_CLIENT } from '../api/client.token';
+import { AUTENTICACION_CON_JWT_MIDDLEWARE_EN_EXPRESS_JS_Y_FUNCTIONAL_INTERCEPTOR_EN_ANGULAR17_CLIENT } from '../api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client.token';
 
 describe('AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17Store', () => {
   function setup(execute: Mock) {

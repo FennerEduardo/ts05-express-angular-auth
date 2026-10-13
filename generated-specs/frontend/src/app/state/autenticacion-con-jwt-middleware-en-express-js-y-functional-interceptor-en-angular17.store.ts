@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { CommandName, CommandResult } from '../api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client';
-import { AUTENTICACION_CON_JWT_MIDDLEWARE_EN_EXPRESS_JS_Y_FUNCTIONAL_INTERCEPTOR_EN_ANGULAR17_CLIENT } from '../api/client.token';
+import { AUTENTICACION_CON_JWT_MIDDLEWARE_EN_EXPRESS_JS_Y_FUNCTIONAL_INTERCEPTOR_EN_ANGULAR17_CLIENT } from '../api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client.token';
 
 interface AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17StateModel {
   events: CommandResult[];
