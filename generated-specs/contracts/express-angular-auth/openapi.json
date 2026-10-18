@@ -6,9 +6,9 @@
     "description": "Auto-generated OpenAPI specification for Autenticación con JWT Middleware en Express.js y Functional Interceptor en Angular 17 from Gherkin feature spec."
   },
   "paths": {
-    "/api/v1/autenticaci-n-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular-17": {
+    "/api/v1/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17": {
       "post": {
-        "summary": "POST /api/v1/autenticaci-n-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular-17",
+        "summary": "POST /api/v1/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17",
         "operationId": "loginAutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17",
         "security": [
           {
