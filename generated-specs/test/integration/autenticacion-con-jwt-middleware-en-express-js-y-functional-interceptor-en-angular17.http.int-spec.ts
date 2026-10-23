@@ -4,14 +4,14 @@ import request from 'supertest';
 import { Pool } from 'pg';
 import { createApp } from '../../src/app';
 import { CommandService } from '../../src/runtime/command-service';
-import { migrate } from '../../src/runtime/schema';
+import { migrate, pgConnectionString } from '../../src/runtime/schema';
 import { signJwt, TENANT_CLAIM } from '../../src/auth/jwt';
 
 const SECRET = 'integration-test-secret-with-32-chars!';
 process.env.JWT_SECRET = SECRET;
 
 describe('AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17 HTTP application layer', () => {
-  const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  const pool = new Pool({ connectionString: pgConnectionString() });
   const app = createApp(new CommandService(pool));
   const tenant = `tenant-${randomUUID()}`;
 

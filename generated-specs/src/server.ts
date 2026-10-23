@@ -4,9 +4,13 @@ import { createApp } from './app';
 import { CommandService } from './runtime/command-service';
 import { DEFAULT_TOPOLOGY, brokerConfigured, connectBroker, type Broker } from './runtime/broker';
 import { OutboxRelay } from './runtime/outbox-relay';
+import { pgConnectionString } from './runtime/schema';
+import { startTelemetry, stopTelemetry } from './runtime/otel';
 
 async function main(): Promise<void> {
-  const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  // OTLP export when OTEL_EXPORTER_OTLP_ENDPOINT is set (runtime/otel.ts).
+  startTelemetry();
+  const pool = new Pool({ connectionString: pgConnectionString() });
   const port = Number(process.env.PORT) || 3000;
   const server = createApp(new CommandService(pool)).listen(port, () => console.log(`listening on :${port}`));
 
@@ -15,7 +19,8 @@ async function main(): Promise<void> {
   if (brokerConfigured()) {
     // runtime/broker.ts: GHK_BROKER, AMQP_URL, PUBSUB_*, SERVICEBUS_*
     broker = await connectBroker();
-    await broker.declare(DEFAULT_TOPOLOGY);
+    // GHK_DECLARE_TOPOLOGY=false when infrastructure as code owns the topology (least-privilege credentials).
+    if (process.env.GHK_DECLARE_TOPOLOGY !== 'false') await broker.declare(DEFAULT_TOPOLOGY);
     const relay = new OutboxRelay(pool, await broker.publisher(DEFAULT_TOPOLOGY.exchange));
     const workerId = `autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-${randomUUID()}`;
     let running = false;
@@ -31,7 +36,7 @@ async function main(): Promise<void> {
   const shutdown = () => {
     if (timer) clearInterval(timer);
     server.close(() => {
-      void Promise.allSettled([broker?.close(), pool.end()]).then(() => process.exit(0));
+      void Promise.allSettled([broker?.close(), pool.end(), stopTelemetry()]).then(() => process.exit(0));
     });
   };
   process.on('SIGTERM', shutdown);
