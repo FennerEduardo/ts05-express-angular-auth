@@ -1,0 +1,426 @@
+{
+  "version": "2",
+  "cliVersion": "3.2.1",
+  "features": {
+    "features/express_angular_auth.feature": {
+      "checksum": "a135c5f549f2ed74f69bfdbacd8a5447f8f6d5efcd1bcd3c95fbf193ec5a8ba0",
+      "contracts": {
+        "contracts/express-angular-auth/ADR-AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17.md": "23b5ff2aaca12791b9e310f357b99ab5529a795c54e0d6e0010cde26540ce497",
+        "contracts/express-angular-auth/openapi.json": "07a0d915feaca6d4faad09151d39def110798cd9cb2c443b79f6a0dbc5dd251a",
+        "openapi.json": "5c9ea911db246b641eb03c26022a748699b3188066be4375ce260862e5e04c5b",
+        "contracts.ts": "eea87d52a5440ac790de010f1fd0ca0de9cf89012dcff346b01d8cf9a106d71b",
+        "contracts/express-angular-auth/asyncapi.json": "cc3a039e5974337dcb915b28eb118c322f425dcaaa68cd6c5e3c3edba479bc80",
+        "asyncapi.json": "256959dc4053e03e98531d55e2745a8ed14d01f124c51b0c25436a71673a7a26"
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "filePath": ".dockerignore",
+      "type": "test",
+      "checksum": "24a2d166089e691663ae1f8440d87dcff0d08b861e09b4becd5d1c8d048c8fae",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "c384c1cf52d056c2fccf211f3e8e489b8fa630a71740597191f7cd81edae391b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "23b5ff2aaca12791b9e310f357b99ab5529a795c54e0d6e0010cde26540ce497",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "256959dc4053e03e98531d55e2745a8ed14d01f124c51b0c25436a71673a7a26",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "contracts.ts",
+      "type": "contract",
+      "checksum": "eea87d52a5440ac790de010f1fd0ca0de9cf89012dcff346b01d8cf9a106d71b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "contracts/express-angular-auth/ADR-AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17.md",
+      "type": "other",
+      "checksum": "23b5ff2aaca12791b9e310f357b99ab5529a795c54e0d6e0010cde26540ce497",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "contracts/express-angular-auth/asyncapi.json",
+      "type": "contract",
+      "checksum": "cc3a039e5974337dcb915b28eb118c322f425dcaaa68cd6c5e3c3edba479bc80",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "contracts/express-angular-auth/openapi.json",
+      "type": "openapi",
+      "checksum": "07a0d915feaca6d4faad09151d39def110798cd9cb2c443b79f6a0dbc5dd251a",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "cucumber.js",
+      "type": "test",
+      "checksum": "c26c8fcfc25e83d0713b8d30a381a69d17e7f8ed37100c40d245ffd762600697",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "1426e8a1f6fe0720f3849dc0d830e7368e94ede91dc1caabf2736f19ca2ea101",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "Dockerfile",
+      "type": "test",
+      "checksum": "ba6d4e2e44f89957b1d84e44cbfed8f3b37bc7802db59a9a7db5fe27d2064334",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "features/express_angular_auth.feature",
+      "type": "other",
+      "checksum": "a135c5f549f2ed74f69bfdbacd8a5447f8f6d5efcd1bcd3c95fbf193ec5a8ba0",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "9ec243da53a2acfff654f119c0ebcff06ab55f8389b18d297e298fce633aca3f",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/angular.json",
+      "type": "test",
+      "checksum": "b5b6b97b6f7cc70e4701cf34c80514281b9f81552b24812ab1b6dd0ef26d8bae",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/package.json",
+      "type": "test",
+      "checksum": "381ec019399d3b8c38f4b92ee721958b3baad25fdafb5fa7a47404e4e4488e9b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client.spec.ts",
+      "type": "test",
+      "checksum": "9d22a86379b1fd74d9e23c8c7a2376caa8c53cdbb5b0e772b845a0fa9df9abd8",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client.token.ts",
+      "type": "test",
+      "checksum": "3dadc65a6886a02c37666b32a2cdc5d271ee413b53fd8e52483e8cfcb0b2126b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-client.ts",
+      "type": "test",
+      "checksum": "d0aef82a848fe376e10ac6cf7b83f64a16b6fe6ac397e8a04055d075b3007c6f",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/app.component.ts",
+      "type": "test",
+      "checksum": "681d01182a8c23fc38a2ff91b26e9c74bbfd41b1af95ed93d717737f282fff7b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-panel.component.spec.ts",
+      "type": "test",
+      "checksum": "29fbb4fca1be2be27a0ad1073bd84623a3bd4a2c022b1c8cd5190c9b8d4405fd",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-panel.component.ts",
+      "type": "test",
+      "checksum": "2604e3183ff9e8fd971dc1d0e1b637d9b9576115dcb74e72a2f162ba70879858",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/realtime/realtime.service.ts",
+      "type": "test",
+      "checksum": "6dcdccc19afd99a0098afa534fe6bc49f31a715c08b1a4167f6e99fe37bf403a",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/state/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.store.spec.ts",
+      "type": "test",
+      "checksum": "865692906463779032a9fc8511347002bd27cfee91efcaf3a4e4b8065f2bb8f6",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/app/state/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.store.ts",
+      "type": "test",
+      "checksum": "974e8a8fd9baeda36b53118eba30d0359540e81f15bbe69ccd31075fb1330a54",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/index.html",
+      "type": "test",
+      "checksum": "a7fde88eb475523422de70d45a99ed55f6050c0deaf59cb56d4996b31d358f04",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/src/main.ts",
+      "type": "test",
+      "checksum": "e332004696e0b4186ae433e8c614278b375baaaf94c4c223a92a1b9a60489c2c",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.app.json",
+      "type": "test",
+      "checksum": "8a132c140adadb1e7d88ba5e39601e527fa23159ad62f8d2c9b60490bedd7a03",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.json",
+      "type": "test",
+      "checksum": "9589b3a1bb2b00140de9a6acfcaf360755afa7b28fe7d81fca55504bb70d7602",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.spec.json",
+      "type": "test",
+      "checksum": "f1115372f31fb52fbf9b3d0d386365c06abfa729184ac8fbc3d8cc58b220ca0a",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "jest.config.js",
+      "type": "test",
+      "checksum": "456021a6d978206c28abfd7b4ae4925a867b1626edd7515309877700831809f4",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "jest.integration.config.js",
+      "type": "test",
+      "checksum": "33884f0f1fdd1199be1d8a790765b6ec5b411aa9df06f28a7bfc94273209eff8",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "5c9ea911db246b641eb03c26022a748699b3188066be4375ce260862e5e04c5b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "package.json",
+      "type": "config",
+      "checksum": "fe1a1ad167617113e8d5ce3a43a8f9c42c70686bd355ac05f23a3026ec9ac296",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "prisma/schema.prisma",
+      "type": "other",
+      "checksum": "2e5ec9a46bf8c2436b3d7cd10b80c1822ebccf7dd378135093c69953634d14cb",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "de0e32f7654700e509efd300f1bd359ccf0ba1bf28b8a61c98a6363d7be7f905",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "33b05b3efe7287ff268074cb1abbd912853960d551952afcae46d47260cfae2c",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "4dc1c21502e81065d6b688fe108d519487fcc3ed1a4c6ce05fbfdb8c60a13d54",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "78e4a0714f1f60f9e5209bfe9bcfbaba9453a932438adda0fa9f92c9f0b30da6",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/app.spec.ts",
+      "type": "test",
+      "checksum": "cb42af970e106df9c4e3cc0ab2b70d41f6df70afd40b2ef4e6b9bf2cda633c04",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/app.ts",
+      "type": "test",
+      "checksum": "95f2d8a7acd588958eeb224c93d3f76213109fe74f3411618de0602f69111657",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/auth/jwt.ts",
+      "type": "test",
+      "checksum": "07db0c61a52420a9c6a7f8809ef966c8b3f4a51d8d55d20df26a57d0aa366b7a",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/domain/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.aggregate.spec.ts",
+      "type": "test",
+      "checksum": "9cf9f581702fd2b97b2910e231461e85d10ad7a694133641b65a99a52baac59e",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/domain/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.aggregate.ts",
+      "type": "test",
+      "checksum": "7c75088eed247b01bbb54ad2e4d506e5169567c15640eec6851acacaf3176d4e",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/broker.ts",
+      "type": "test",
+      "checksum": "51f7dc0a12cfd87d3f9524dc90c165209d45ade89c1fa84919bcf09f6585bcfa",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/command-service.ts",
+      "type": "test",
+      "checksum": "a100bb241a0427a7618d9829f652b3526ee6ce318441505b929e72611b440c84",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/inbox-consumer.ts",
+      "type": "test",
+      "checksum": "26d6a1e1a55df645ae981184c67684830220ef6aa62e11385af4e2ca884672ea",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/index.ts",
+      "type": "test",
+      "checksum": "4ebaa60432adad597200b0b234230edd23f26aac818db06c41f0fa71267e48cb",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/otel.ts",
+      "type": "test",
+      "checksum": "90294eee6a4ee42f6237db41619438a702ef892afd3a3f85494a80f485b54f3e",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/outbox-relay.ts",
+      "type": "test",
+      "checksum": "edc22e6f853e656fe848832fa7731b634b4b6857c4027db0d474dda53fdbeb52",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/saga.ts",
+      "type": "test",
+      "checksum": "f6200104da1c78817893f2c6a52e4c58367c83059e423a39e4747a81421e698b",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/schema.ts",
+      "type": "test",
+      "checksum": "0bbb8b670d44558bc5a97691265540380397de23680b4fa9c12eba2f88800255",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/runtime/telemetry.ts",
+      "type": "test",
+      "checksum": "6da53c415a58f9d4fe8a35e17640beee570fab1ac9f04cdc79c0f549585fe08f",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "src/server.ts",
+      "type": "test",
+      "checksum": "5d2be8c445c05166dcad87ac88ea0bd8042255b584137b2941ddead3110c60a7",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "test/integration/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.http.int-spec.ts",
+      "type": "test",
+      "checksum": "9c80faea3505a34fca53f5f24c4a59797e0827bc322044204b1caf1360621117",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "test/integration/runtime.int-spec.ts",
+      "type": "test",
+      "checksum": "989afd798fcec79397a8d8595d1c5cb17b5a996ace5fcd6b01aa19b51b910b74",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "test/steps/autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17.steps.ts",
+      "type": "test",
+      "checksum": "54dfc9b56f73c3a06d0152210e77f9d5be8c911f0080f1ec212a3b5a1207102c",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "tsconfig.build.json",
+      "type": "test",
+      "checksum": "cca65441174fe56cd889690dc8fe916f176597b99c8d2fcc29395b987992257e",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    },
+    {
+      "filePath": "tsconfig.json",
+      "type": "test",
+      "checksum": "3d5f419774b303fe446cb8d9f4ba70123461288769a27275f042de6cb70d52a1",
+      "feature": "features/express_angular_auth.feature",
+      "generatedAt": "2026-10-25T05:11:41.637Z"
+    }
+  ],
+  "executions": []
+}
