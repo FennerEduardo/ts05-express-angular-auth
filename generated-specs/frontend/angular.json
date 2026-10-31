@@ -38,6 +38,18 @@
           },
           "defaultConfiguration": "production"
         },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-frontend:build:production"
+            },
+            "development": {
+              "buildTarget": "autenticacion-con-jwt-middleware-en-express-js-y-functional-interceptor-en-angular17-frontend:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
