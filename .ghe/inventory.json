@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.2",
+  "cliVersion": "3.3.0",
   "features": {
     "features/express_angular_auth.feature": {
       "checksum": "a135c5f549f2ed74f69bfdbacd8a5447f8f6d5efcd1bcd3c95fbf193ec5a8ba0",
@@ -8,7 +8,7 @@
         "contracts/express-angular-auth/ADR-AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17.md": "23b5ff2aaca12791b9e310f357b99ab5529a795c54e0d6e0010cde26540ce497",
         "contracts/express-angular-auth/openapi.json": "07a0d915feaca6d4faad09151d39def110798cd9cb2c443b79f6a0dbc5dd251a",
         "openapi.json": "5c9ea911db246b641eb03c26022a748699b3188066be4375ce260862e5e04c5b",
-        "contracts.ts": "52ba1f16bc838ec68aa37f8d78d88a6d523ba05ce6a9a80e482d5917cda456f8",
+        "contracts.ts": "ff501954b0720e8577eb9e31ec6491c9f2902623ba9f3f4022d1e660370dd2ba",
         "contracts/express-angular-auth/asyncapi.json": "cc3a039e5974337dcb915b28eb118c322f425dcaaa68cd6c5e3c3edba479bc80",
         "asyncapi.json": "256959dc4053e03e98531d55e2745a8ed14d01f124c51b0c25436a71673a7a26"
       }
@@ -25,9 +25,9 @@
     {
       "filePath": ".env.example",
       "type": "config",
-      "checksum": "c384c1cf52d056c2fccf211f3e8e489b8fa630a71740597191f7cd81edae391b",
+      "checksum": "9d46f81ac710e9ce7a0dcf3339e7807b99d7cca4f93c48dd29f5a411aee70b3b",
       "feature": "features/express_angular_auth.feature",
-      "generatedAt": "2026-10-25T05:11:41.637Z"
+      "generatedAt": "2026-11-03T13:48:37.219Z"
     },
     {
       "filePath": "ADR-001-architecture-decisions.md",
@@ -46,9 +46,9 @@
     {
       "filePath": "contracts.ts",
       "type": "contract",
-      "checksum": "52ba1f16bc838ec68aa37f8d78d88a6d523ba05ce6a9a80e482d5917cda456f8",
+      "checksum": "ff501954b0720e8577eb9e31ec6491c9f2902623ba9f3f4022d1e660370dd2ba",
       "feature": "features/express_angular_auth.feature",
-      "generatedAt": "2026-10-30T20:48:07.633Z"
+      "generatedAt": "2026-11-03T13:48:37.219Z"
     },
     {
       "filePath": "contracts/express-angular-auth/ADR-AutenticacionConJwtMiddlewareEnExpressJsYFunctionalInterceptorEnAngular17.md",
@@ -81,9 +81,9 @@
     {
       "filePath": "docker-compose.yml",
       "type": "config",
-      "checksum": "1426e8a1f6fe0720f3849dc0d830e7368e94ede91dc1caabf2736f19ca2ea101",
+      "checksum": "6362c46bdc8627d9cedff2f61a0a718e5bb87df62eb5c4f1cc2f59c9aaecac59",
       "feature": "features/express_angular_auth.feature",
-      "generatedAt": "2026-10-25T05:11:41.637Z"
+      "generatedAt": "2026-11-03T13:48:37.219Z"
     },
     {
       "filePath": "Dockerfile",
@@ -249,9 +249,9 @@
     {
       "filePath": "prisma/schema.prisma",
       "type": "other",
-      "checksum": "2e5ec9a46bf8c2436b3d7cd10b80c1822ebccf7dd378135093c69953634d14cb",
+      "checksum": "b75a1489008093325ade1894c5496ae7b50cd5b788ad63d915a18790bf372c86",
       "feature": "features/express_angular_auth.feature",
-      "generatedAt": "2026-10-25T05:11:41.637Z"
+      "generatedAt": "2026-11-03T13:48:37.219Z"
     },
     {
       "filePath": "prompts/backend-agent.md",
